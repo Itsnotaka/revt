@@ -37,6 +37,8 @@ module.exports = {
 		'react/jsx-curly-newline': 'off',
 		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/object-curly-spacing': 'off',
+		// Annoying for react
+		"arrow-body-style": "off",
 
 		// Bruh
 		'@typescript-eslint/ban-types': 'off',
