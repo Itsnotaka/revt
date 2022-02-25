@@ -12,6 +12,7 @@ module.exports = {
 		},
 		ecmaVersion: 12,
 		sourceType: 'module',
+		project: './packages/**/tsconfig.json'
 	},
 	settings: {
 		react: {
