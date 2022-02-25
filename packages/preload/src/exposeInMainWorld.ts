@@ -1,4 +1,4 @@
-import {contextBridge} from 'electron';
+import { contextBridge } from 'electron';
 
 /**
  * Typesafe wrapper for `electron.contextBridge.exposeInMainWorld`.
@@ -8,6 +8,9 @@ import {contextBridge} from 'electron';
  *
  * @see https://www.electronjs.org/docs/latest/api/context-bridge#contextbridgeexposeinmainworldapikey-api
  */
-export function exposeInMainWorld<T extends keyof Exposed & string>(key: T, api: Exposed[T]) {
-  return contextBridge.exposeInMainWorld(key, api);
+export function exposeInMainWorld<T extends keyof Exposed & string>(
+	key: T,
+	api: Exposed[T],
+) {
+	contextBridge.exposeInMainWorld(key, api);
 }

@@ -37,7 +37,8 @@ async function createWindow() {
 			: new URL(
 					'../renderer/dist/index.html',
 					'file://' + __dirname,
-          ).toString();
+					// eslint-disable-next-line no-mixed-spaces-and-tabs
+			  ).toString();
 
 	await browserWindow.loadURL(pageUrl);
 
