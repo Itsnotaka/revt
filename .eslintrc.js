@@ -12,7 +12,7 @@ module.exports = {
 		},
 		ecmaVersion: 12,
 		sourceType: 'module',
-		project: './packages/**/tsconfig.json'
+		project: './packages/**/tsconfig.json',
 	},
 	settings: {
 		react: {
@@ -38,7 +38,7 @@ module.exports = {
 		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/object-curly-spacing': 'off',
 		// Annoying for react
-		"arrow-body-style": "off",
+		'arrow-body-style': 'off',
 
 		// Bruh
 		'@typescript-eslint/ban-types': 'off',

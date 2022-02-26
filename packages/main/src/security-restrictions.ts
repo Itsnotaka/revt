@@ -73,8 +73,9 @@ app.on('web-contents-created', (_, contents) => {
 		(webContents, permission, callback) => {
 			const { origin } = new URL(webContents.getURL());
 
-			const permissionGranted =
-				Boolean(ALLOWED_ORIGINS_AND_PERMISSIONS.get(origin)?.has(permission));
+			const permissionGranted = Boolean(
+				ALLOWED_ORIGINS_AND_PERMISSIONS.get(origin)?.has(permission),
+			);
 			callback(permissionGranted);
 
 			if (!permissionGranted && import.meta.env.DEV) {
