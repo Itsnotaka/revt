@@ -10,7 +10,7 @@
 		"build:preload": "cd ./packages/preload && vite build",
 		"build:renderer": "cd ./packages/renderer && vite build",
 		"build": "yarn build:main && yarn build:preload && yarn build:renderer",
-		"compile": "cross-env MODE=production yarn build && electron-builder build --config .electron-builder.config.js --dir --config.asar=false"
+		"compile": "cross-env MODE=production yarn build && yarn obfuscate && electron-builder build --config .electron-builder.config.js --dir --config.asar=false"
 	},
 	"devDependencies": {
 		"@types/react": "^17.0.39",

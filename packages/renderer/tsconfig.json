@@ -24,7 +24,7 @@
 		"src/**/*.tsx",
 		"types/**/*.d.ts",
 		"../../types/**/*.d.ts",
-		"../preload/contracts.d.ts"
+		"../preload/exposeInMainWorld.d.ts"
 	],
 	"exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }

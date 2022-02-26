@@ -7,17 +7,14 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"isolatedModules": true,
-		"jsx": "react-jsx",
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
+
 		"types": ["node"],
+
 		"baseUrl": ".",
 		"paths": {
 			"/@/*": ["./src/*"]
-		},
-		"lib": ["ESNext", "dom", "dom.iterable"]
+		}
 	},
-
-	"include": ["src/**/*.ts", "src/**/*.tsx", "./**.d.ts"],
+	"include": ["src/**/*.ts", "../../types/**/*.d.ts"],
 	"exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }

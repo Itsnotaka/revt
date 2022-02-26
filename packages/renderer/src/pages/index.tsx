@@ -6,6 +6,10 @@ const Home = () => {
 		<>
 			<p>hello from react</p>
 			<p>Version: {window.revt.version}</p>
+			<p>
+				Typesafe Version:
+				{window.nodeCrypto.sha256sum(window.yerba.version.toString())}
+			</p>
 			<span>Click Me!</span>
 			<Button />
 		</>
