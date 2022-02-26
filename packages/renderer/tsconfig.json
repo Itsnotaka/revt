@@ -19,11 +19,9 @@
 	},
 
 	"include": [
-		"src/**/*.vue",
 		"src/**/*.ts",
 		"src/**/*.tsx",
 		"types/**/*.d.ts",
-		"../../types/**/*.d.ts",
 		"../preload/exposeInMainWorld.d.ts"
 	],
 	"exclude": ["**/*.spec.ts", "**/*.test.ts"]
