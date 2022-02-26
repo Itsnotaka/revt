@@ -1,24 +1,23 @@
 {
-  "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
-    "sourceMap": false,
-    "moduleResolution": "Node",
-    "skipLibCheck": true,
-    "strict": true,
-    "isolatedModules": true,
+	"compilerOptions": {
+		"module": "esnext",
+		"target": "esnext",
+		"sourceMap": false,
+		"moduleResolution": "Node",
+		"skipLibCheck": true,
+		"strict": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"types": ["node"],
+		"baseUrl": ".",
+		"paths": {
+			"/@/*": ["./src/*"]
+		},
+		"lib": ["ESNext", "dom", "dom.iterable"]
+	},
 
-    "types" : ["node"],
-
-    "baseUrl": ".",
-  },
-  "include": [
-    "src/**/*.ts",
-    "contracts.d.ts",
-    "../../types/**/*.d.ts"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+	"include": ["src/**/*.ts", "src/**/*.tsx", "./**.d.ts"],
+	"exclude": ["**/*.spec.ts", "**/*.test.ts"]
 }
