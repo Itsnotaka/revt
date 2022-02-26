@@ -5,6 +5,7 @@ const Home = () => {
 	return (
 		<>
 			<p>hello from react</p>
+			<p>Version: {window.revt.version}</p>
 			<span>Click Me!</span>
 			<Button />
 		</>
