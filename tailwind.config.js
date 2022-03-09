@@ -1,7 +1,10 @@
+// set a global scope for content to prevent No utility classes error
+const { join } = require('path');
+
 module.exports = {
 	content: [
-		'./packages/renderer/src/pages/*.{js,jsx,ts,tsx}',
-		'./packages/renderer/src/components/*.{js,jsx,ts,tsx}',
+		`${join(__dirname, 'packages')}/**/*.{js,jsx,ts,tsx}`,
+		`${join(__dirname, 'packages')}/**/*.{js,jsx,ts,tsx}`,
 	],
 	theme: {
 		extend: {},
