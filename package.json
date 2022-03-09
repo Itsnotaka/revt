@@ -1,14 +1,14 @@
 {
 	"name": "electron-boilerplate",
 	"private": true,
-	"main": "packages/main/dist/index.cjs",
+	"main": "app/main/dist/index.cjs",
 	"scripts": {
 		"dev": "node scripts/watch.js",
 		"lint": "eslint . --ext js,ts,tsx",
 		"format": "prettier --write '**/*.{js,ts,tsx}'",
-		"build:main": "cd ./packages/main && vite build",
-		"build:preload": "cd ./packages/preload && vite build",
-		"build:renderer": "cd ./packages/renderer && vite build",
+		"build:main": "cd ./app/main && vite build",
+		"build:preload": "cd ./app/preload && vite build",
+		"build:renderer": "cd ./app/renderer && vite build",
 		"build": "yarn build:main && yarn build:preload && yarn build:renderer",
 		"compile": "cross-env MODE=production yarn build && electron-builder build --config .electron-builder.config.js --dir --config.asar=false"
 	},
