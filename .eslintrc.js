@@ -12,6 +12,16 @@ module.exports = {
 		},
 		ecmaVersion: 12,
 		sourceType: 'module',
+		// Allows for the parsing of modern ECMAScript features
+		ecmaFeatures: {
+			jsx: true,
+		},
+		//fix the Parsing error: Cannot read file issue
+		project: [
+			'./app/main/tsconfig.json',
+			'./app/preload/tsconfig.json',
+			'./app/renderer/tsconfig.json',
+		],
 	},
 	settings: {
 		react: {
